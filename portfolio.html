@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalizer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -22,19 +32,19 @@
           </a>
 
           <ul class="nav-menu list">
-            <li>
-              <a class="page" href="index.html">Studio</a>
+            <li class="item">
+              <a class="page link" href="index.html">Studio</a>
             </li>
-            <li>
+            <li class="item">
               <a
-                class="page current"
+                class="page current link"
                 href="./portfolio.html"
                 rel="noopener norefer"
                 >Portfolio</a
               >
             </li>
-            <li>
-              <a class="page" href="#">Contacts</a>
+            <li class="item">
+              <a class="page link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,134 +67,161 @@
     <!-- Main -->
     <main>
       <!-- Buttons Section -->
-      <section>
+      <section class="section">
         <div class="container">
           <ul class="filters list">
-            <li>
+            <li class="space">
               <button class="button filter current" type="button">All</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Website</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">App</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Design</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Marketing</button>
             </li>
           </ul>
 
           <!-- Images Section -->
           <ul class="projects list">
-            <li class="item">
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/banking.jpg"
                   alt="banking"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Banking App Interface Concept</h3>
-                <p class="type">App</p>
+                <div class="substrate">
+                  <h3 class="name">Banking App Interface Concept</h3>
+                  <p class="type">App</p>
+                </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/cashless.jpg"
                   alt="cashless payment"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Cashless Payment</h3>
-                <p class="type">Marketing</p>
+                <div class="substrate">
+                  <h3 class="name">Cashless Payment</h3>
+                  <p class="type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/meditation.jpg"
                   alt="meditation app"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Meditation App</h3>
-                <p class="type">App</p>
+                <div class="substrate">
+                  <h3 class="name">Meditation App</h3>
+                  <p class="type">App</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/taxiservices.jpg"
                   alt="taxi services"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Taxi Services</h3>
-                <p class="type">Marketing</p>
+                <div class="substrate">
+                  <h3 class="name">Taxi Services</h3>
+                  <p class="type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/screen.jpg"
                   alt="screen illustrations"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Screen Illustrations</h3>
-                <p class="type">Design</p>
+                <div class="substrate">
+                  <h3 class="name">Screen Illustrations</h3>
+                  <p class="type">Design</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/onlinecourses.jpg"
                   alt="onlinecourses"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Online Courses</h3>
-                <p class="type">Marketing</p>
+                <div class="substrate">
+                  <h3 class="name">Online Courses</h3>
+                  <p class="type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/stories.jpg"
                   alt="stories"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Instagram Stories Concept</h3>
-                <p class="type">Design</p>
+                <div class="substrate">
+                  <h3 class="name">Instagram Stories Concept</h3>
+                  <p class="type">Design</p>
+                </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/organic.jpg"
                   alt="organic"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">Organic Food</h3>
-                <p class="type">Website</p>
+                <div class="substrate">
+                  <h3 class="name">Organic Food</h3>
+                  <p class="type">Website</p>
+                </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="project">
+            <li class="project-card">
+              <a href="#" class="project link">
                 <img
                   src="./images/coffee.jpg"
                   alt="coffee"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h3 class="name">French Coffee</h3>
-                <p class="type">Website</p>
+                <div class="substrate">
+                  <h3 class="name">French Coffee</h3>
+                  <p class="type">Website</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -192,15 +229,15 @@
       </section>
       <!-- Footer -->
       <footer class="page-footer bg-footer">
-        <div>
-          <a class="logo-link" href="index.html">
+        <div class="container">
+          <a class="logo-link footer" href="index.html">
             <span class="logo">WEB</span>
             <span class="studio-footer">STUDIO</span>
           </a>
           <p class="footer-description">
             Increase the flow of customers and<br />
-            sales for your business with digital<br />marketing & growth
-            solutions.
+            sales for your business with digital<br />
+            marketing & growth solutions.
           </p>
         </div>
       </footer>
