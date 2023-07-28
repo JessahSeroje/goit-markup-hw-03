@@ -37,7 +37,7 @@ html {
 img {
   display: block;
   max-width: 100%;
-  height: 0;
+  height: auto;
 }
 
 .link {
@@ -76,7 +76,7 @@ body {
 .contacts-menu,
 .menu {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .logo-link {
@@ -141,8 +141,8 @@ body {
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .page.current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
   color: var(--iris);
 }
 
@@ -184,6 +184,7 @@ body {
   background-color: var(--iris);
   line-height: 1.87;
   letter-spacing: 0.06em;
+  font-weight: 500;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -216,8 +217,8 @@ body {
 .button.filter.current {
   background-color: var(--ocean);
   color: var(--cloud);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px, 2px, 2px, rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* -- Section 1 -- */
